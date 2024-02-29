@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: Cs1Application
+  cloud:
+    consul:
+      enabled: true
+      host: localhost
+      port: 8500
+      discovery:
+        instance-id: custom-service-id
+        serviceName: myApp
+        healthCheckPath: /health
+        healthCheckInterval: 10s
